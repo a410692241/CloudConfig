@@ -8,7 +8,7 @@ eureka:
     prefer-ip-address: true
 spring:
   application:
-    name: default
+    name: dev
 server-provider:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

@@ -1,0 +1,20 @@
+server:
+  port: 8801
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: native
+server-provider:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+logging:
+  level:
+    com:
+      wei:
+        controller:
+          FeignService: debug
